@@ -4,6 +4,7 @@
 
 @import './utilities/variables';
 @import './utilities/mixins';
+@import './utilities/fonts';
 
 @import './layout/header';
 @import './layout/nav';
@@ -30,5 +31,6 @@
 @import './vendor/slider';
 @import './utilities/colors';
 @import './utilities/helpers';
+@import "./utilities/keyframes";
 @import './utilities/spacing';
 
