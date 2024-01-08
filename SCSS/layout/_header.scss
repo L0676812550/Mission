@@ -7,10 +7,23 @@
   @include flex-container (flex-start, center, nowrap);
 }
 
-.nav {
-  @include flex-container (flex-end, center, nowrap);
+.logo__space {
+  margin-right: 20px;
 }
 
-.nav__item--accent {
-  // color: $Orange !important;
+.nav {
+  @include flex-container (flex-end, center, nowrap);
+  color: black;
+
+  &__item {
+    padding-right: 55px;
+  }
+  &__item:last-child {
+    padding-right: 0;
+  }
+  &__item--accent {
+    color: orange;
+  }
 }
+
+
