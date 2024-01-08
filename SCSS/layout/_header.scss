@@ -1,11 +1,16 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
+  @include flex-container(space-between, center, nowrap);
   padding: 16px 112px;
 }
 
 .header__left {
-  display: flex;
+  @include flex-container (flex-start, center, nowrap);
+}
+
+.nav {
+  @include flex-container (flex-end, center, nowrap);
+}
+
+.nav__item--accent {
+  color: $Orange !important;
 }
