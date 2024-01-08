@@ -1,0 +1,36 @@
+@import './SCSS/base/base';
+@import './SCSS/base/normalize';
+@import './SCSS/base/typography';
+
+@import './SCSS/utilities/variables';
+@import './SCSS/utilities/mixins';
+@import './SCSS/utilities/fonts';
+
+@import './SCSS/layout/header';
+@import './SCSS/layout/nav';
+@import './SCSS/layout/main';
+@import './SCSS/layout/footer';
+
+@import './SCSS/components/section-about-us';
+@import './SCSS/components/section-ads';
+@import './SCSS/components/section-bottom';
+@import './SCSS/components/section-cta';
+@import './SCSS/components/section-hero';
+@import './SCSS/components/section-projects';
+@import './SCSS/components/section-reputation';
+@import './SCSS/components/section-services';
+@import './SCSS/components/section-stat';
+
+@import './SCSS/components/buttons';
+@import './SCSS/components/cards';
+@import './SCSS/components/carousel';
+@import './SCSS/pages/contact';
+@import './SCSS/components/cover';
+@import './SCSS/components/forms';
+
+@import './SCSS/vendor/slider';
+@import './SCSS/utilities/colors';
+@import './SCSS/utilities/helpers';
+@import "./SCSS/utilities/keyframes";
+@import './SCSS/utilities/spacing';
+
