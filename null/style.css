@@ -514,8 +514,13 @@ template {
   color: orange;
 }
 
+.hero {
+  width: 100%;
+  height: 646px;
+  margin: auto;
+}
+
 .hero__title {
-  position: absolute;
   top: 239px;
   left: 112px;
   width: 556px;
@@ -533,7 +538,6 @@ template {
 }
 
 .hero {
-  background: url(/Images/Hero_bg.svg) center/cover no-repeat;
+  background-color: rgb(200, 233, 233);
   width: 100%;
-  height: 100%;
 }/*# sourceMappingURL=style.css.map */
