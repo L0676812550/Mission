@@ -1,7 +1,6 @@
 .body {
   font-family: "WorkSans", sans-serif;
   padding: 0;
-  font-size: 1em;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -349,135 +348,123 @@ template {
 }
 
 .title__h1 {
-  width: 600px;
+  font-weight: 600;
   size: 72px;
-  line-height: 84.46px;
+  line-height: 50px;
 }
 
 .title__h2 {
-  width: 700px;
+  font-weight: 700;
   size: 60px;
   line-height: 70.38px;
 }
 
 .title__h3 {
-  width: 700px;
+  font-weight: 700;
   size: 36px;
   line-height: 42.23px;
 }
 
 .title__400-16-18 {
-  width: 400px;
+  font-weight: 400;
   size: 18px;
   line-height: 18.77px;
 }
 
 .title__400-18-21 {
-  width: 400px;
+  font-weight: 400;
   size: 18px;
   line-height: 21.11px;
 }
 
 .title__400-20-23 {
-  width: 400;
+  font-weight: 400;
   size: 20px;
   line-height: 23.46px;
 }
 
 .title__400-24-28 {
-  width: 400px;
+  font-weight: 400;
   size: 24px;
   line-height: 28.15px;
 }
 
 .title__500-20-23 {
-  width: 400px;
+  font-weight: 400;
   size: 16px;
   line-height: 18.77px;
   text-transform: uppercase;
 }
 
 .title__700-20-23 {
-  width: 700px;
+  font-weight: 700;
   size: 20px;
   line-height: 23.46px;
 }
 
 .title__h1 {
-  width: 600px;
+  font-weight: 600;
   size: 72px;
-  line-height: 84.46px;
+  line-height: 50px;
 }
 
 .title__h2 {
-  width: 700px;
+  font-weight: 700;
   size: 60px;
   line-height: 70.38px;
 }
 
 .title__h3 {
-  width: 700px;
+  font-weight: 700;
   size: 36px;
   line-height: 42.23px;
 }
 
 .title__400-16-18 {
-  width: 400px;
+  font-weight: 400;
   size: 18px;
   line-height: 18.77px;
 }
 
 .title__400-18-21 {
-  width: 400px;
+  font-weight: 400;
   size: 18px;
   line-height: 21.11px;
 }
 
 .title__400-20-23 {
-  width: 400;
+  font-weight: 400;
   size: 20px;
   line-height: 23.46px;
 }
 
 .title__400-24-28 {
-  width: 400px;
+  font-weight: 400;
   size: 24px;
   line-height: 28.15px;
 }
 
 .title__500-20-23 {
-  width: 400px;
+  font-weight: 400;
   size: 16px;
   line-height: 18.77px;
   text-transform: uppercase;
 }
 
 .title__700-20-23 {
-  width: 700px;
+  font-weight: 700;
   size: 20px;
   line-height: 23.46px;
 }
 
-@font-face {
-  font-family: "WorkSans";
-  src: url(/Fonts/Work_Sans/WorkSans-400.woff2) format(woff2);
-  font-weight: 400;
+:root {
+  --black-color: rgba(41, 46, 61, 1);
+  --blue-color: rgba(41, 71, 169, 1);
+  --grey-color: rgba(133, 142, 173, 1);
+  --orange-color: rgba(249, 153, 93, 1);
+  --white-color: rgba(255, 255, 255, 1);
 }
-@font-face {
-  font-family: "WorkSans";
-  src: url(/Fonts/Work_Sans/WorkSans-500.woff2) format(woff2);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "WorkSans";
-  src: url(/Fonts/Work_Sans/WorkSans-600.woff2) format(woff2);
-  font-weight: 600;
-}
-@font-face {
-  font-family: "WorkSans";
-  src: url(/Fonts/Work_Sans/WorkSans-700.woff2) format(woff2);
-  font-weight: 700;
-}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -515,16 +502,76 @@ template {
 }
 
 .hero {
-  width: 100%;
-  height: 646px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   margin: auto;
 }
-
+.hero__container {
+  flex: 70%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.hero__block {
+  flex: 30%;
+  position: relative;
+}
 .hero__title {
-  top: 239px;
+  top: 0px;
   left: 112px;
-  width: 556px;
+  width: 250px;
   height: auto;
+  position: relative;
+}
+.hero__block-title {
+  text-align: center;
+  background-color: #3939dc;
+  color: white;
+  width: 250px;
+  position: relative;
+  text-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button__back {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.button__next {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.button__link {
+  color: white;
+  font-weight: 400;
+  size: 18px;
+  line-height: 21.11px;
+}
+
+.gap {
+  padding-right: 1px;
+  background-color: white;
 }
 
 .logo {
@@ -540,4 +587,8 @@ template {
 .hero {
   background-color: rgb(200, 233, 233);
   width: 100%;
+}
+
+.spacing__15-0 {
+  padding: 15px 0;
 }/*# sourceMappingURL=style.css.map */

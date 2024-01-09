@@ -1,0 +1,26 @@
+.button {
+  @include flex-container (center,center, wrap)
+  
+}
+
+.button__back {
+  background-color: black;
+  @include flex-container (center,center, nowrap)
+}
+
+.button__next {
+  background-color: black;
+  @include flex-container (center,center, nowrap)
+}
+
+.button__link {
+  color: white;
+  font-weight: 400;
+  size: 18px;
+  line-height: 21.11px;
+}
+
+.gap {
+  padding-right: 1px;
+  background-color: white;
+}
