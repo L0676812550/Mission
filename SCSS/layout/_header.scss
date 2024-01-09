@@ -1,10 +1,10 @@
 .header {
   @include flex-container(space-between, center, nowrap);
   padding: 16px 112px;
-}
 
-.header__left {
+  &__left {
   @include flex-container (flex-start, center, nowrap);
+  }
 }
 
 .logo__space {

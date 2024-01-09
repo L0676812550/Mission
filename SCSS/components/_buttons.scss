@@ -1,26 +1,31 @@
 .button {
-  @include flex-container (center,center, wrap)
-  
+  @include flex-container (center,center, wrap);
+  width: 400px;
 }
 
 .button__back {
-  background-color: black;
-  @include flex-container (center,center, nowrap)
+  background-color: var(--black-color);
+  @include flex-container (center,center, nowrap);
+  width: calc(50% - 1px);
+  padding: 5px 0;
 }
 
 .button__next {
-  background-color: black;
-  @include flex-container (center,center, nowrap)
+  background-color: var(--black-color);
+  @include flex-container (center,center, nowrap);
+  width: 50%;
+  padding: 5px 0;
 }
 
 .button__link {
-  color: white;
+  color: var(--white-color);
   font-weight: 400;
-  size: 18px;
+  font-size: 18px;
   line-height: 21.11px;
+  padding: 0 5px;
 }
 
 .gap {
   padding-right: 1px;
-  background-color: white;
+  background-color: var(--white-color);
 }

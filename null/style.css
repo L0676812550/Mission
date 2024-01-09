@@ -349,111 +349,111 @@ template {
 
 .title__h1 {
   font-weight: 600;
-  size: 72px;
-  line-height: 50px;
+  font-size: 72px;
+  line-height: 84.46px;
 }
 
 .title__h2 {
   font-weight: 700;
-  size: 60px;
+  font-size: 60px;
   line-height: 70.38px;
 }
 
 .title__h3 {
   font-weight: 700;
-  size: 36px;
+  font-size: 36px;
   line-height: 42.23px;
 }
 
 .title__400-16-18 {
   font-weight: 400;
-  size: 18px;
+  font-size: 18px;
   line-height: 18.77px;
 }
 
 .title__400-18-21 {
   font-weight: 400;
-  size: 18px;
+  font-size: 18px;
   line-height: 21.11px;
 }
 
 .title__400-20-23 {
   font-weight: 400;
-  size: 20px;
+  font-size: 20px;
   line-height: 23.46px;
 }
 
 .title__400-24-28 {
   font-weight: 400;
-  size: 24px;
+  font-size: 24px;
   line-height: 28.15px;
 }
 
 .title__500-20-23 {
   font-weight: 400;
-  size: 16px;
+  font-size: 16px;
   line-height: 18.77px;
   text-transform: uppercase;
 }
 
 .title__700-20-23 {
   font-weight: 700;
-  size: 20px;
+  font-size: 20px;
   line-height: 23.46px;
 }
 
 .title__h1 {
   font-weight: 600;
-  size: 72px;
-  line-height: 50px;
+  font-size: 72px;
+  line-height: 84.46px;
 }
 
 .title__h2 {
   font-weight: 700;
-  size: 60px;
+  font-size: 60px;
   line-height: 70.38px;
 }
 
 .title__h3 {
   font-weight: 700;
-  size: 36px;
+  font-size: 36px;
   line-height: 42.23px;
 }
 
 .title__400-16-18 {
   font-weight: 400;
-  size: 18px;
+  font-size: 18px;
   line-height: 18.77px;
 }
 
 .title__400-18-21 {
   font-weight: 400;
-  size: 18px;
+  font-size: 18px;
   line-height: 21.11px;
 }
 
 .title__400-20-23 {
   font-weight: 400;
-  size: 20px;
+  font-size: 20px;
   line-height: 23.46px;
 }
 
 .title__400-24-28 {
   font-weight: 400;
-  size: 24px;
+  font-size: 24px;
   line-height: 28.15px;
 }
 
 .title__500-20-23 {
   font-weight: 400;
-  size: 16px;
+  font-size: 16px;
   line-height: 18.77px;
   text-transform: uppercase;
 }
 
 .title__700-20-23 {
   font-weight: 700;
-  size: 20px;
+  font-size: 20px;
   line-height: 23.46px;
 }
 
@@ -465,6 +465,26 @@ template {
   --white-color: rgba(255, 255, 255, 1);
 }
 
+@font-face {
+  font-family: "WorkSans";
+  src: url(/Fonts/work-sans-v19-latin-400.woff2) format(woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url(/Fonts/work-sans-v19-latin-500.woff2) format(woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url(/Fonts/work-sans-v19-latin-600.woff2) format(woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url(/Fonts/work-sans-v19-latin-700.woff2) format(woff2);
+  font-weight: 700;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -472,7 +492,6 @@ template {
   flex-wrap: nowrap;
   padding: 16px 112px;
 }
-
 .header__left {
   display: flex;
   justify-content: flex-start;
@@ -504,7 +523,7 @@ template {
 .hero {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: nowrap;
   margin: auto;
 }
@@ -516,19 +535,24 @@ template {
 .hero__block {
   flex: 30%;
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .hero__title {
   top: 0px;
   left: 112px;
-  width: 250px;
+  width: 600px;
   height: auto;
   position: relative;
 }
 .hero__block-title {
   text-align: center;
-  background-color: #3939dc;
-  color: white;
-  width: 250px;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  width: 400px;
   position: relative;
   text-wrap: wrap;
   display: flex;
@@ -544,34 +568,40 @@ template {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 400px;
 }
 
 .button__back {
-  background-color: black;
+  background-color: var(--black-color);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  width: calc(50% - 1px);
+  padding: 5px 0;
 }
 
 .button__next {
-  background-color: black;
+  background-color: var(--black-color);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  width: 50%;
+  padding: 5px 0;
 }
 
 .button__link {
-  color: white;
+  color: var(--white-color);
   font-weight: 400;
-  size: 18px;
+  font-size: 18px;
   line-height: 21.11px;
+  padding: 0 5px;
 }
 
 .gap {
   padding-right: 1px;
-  background-color: white;
+  background-color: var(--white-color);
 }
 
 .logo {
