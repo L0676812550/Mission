@@ -1,5 +1,5 @@
 .hero {
-  @include flex-container(center,flex-end, nowrap);
+  @include flex-container(row, center,flex-end, nowrap);
   // width: 100%;
   // height: 646px;
   margin: auto;
@@ -13,7 +13,7 @@
   &__block {
   flex: 30%;
   position: relative;
-  @include flex-container (flex-end,  flex-end, wrap);
+  @include flex-container (row, flex-end,  flex-end, wrap);
   flex-direction: column;
   }
 

@@ -1,18 +1,18 @@
 .button {
-  @include flex-container (center,center, wrap);
+  @include flex-container (row, center,center, wrap);
   width: 400px;
 }
 
 .button__back {
   background-color: var(--black-color);
-  @include flex-container (center,center, nowrap);
+  @include flex-container (row, center,center, nowrap);
   width: calc(50% - 1px);
   padding: 5px 0;
 }
 
 .button__next {
   background-color: var(--black-color);
-  @include flex-container (center,center, nowrap);
+  @include flex-container (row, center,center, nowrap);
   width: 50%;
   padding: 5px 0;
 }

@@ -1,9 +1,9 @@
 .header {
-  @include flex-container(space-between, center, nowrap);
+  @include flex-container(row, space-between, center, nowrap);
   padding: 16px 112px;
 
   &__left {
-  @include flex-container (flex-start, center, nowrap);
+  @include flex-container (row, flex-start, center, nowrap);
   }
 }
 
@@ -12,8 +12,8 @@
 }
 
 .nav {
-  @include flex-container (flex-end, center, nowrap);
-  color: black;
+  @include flex-container (row, flex-end, center, nowrap);
+  color: var(--black-color);
 
   &__item {
     padding-right: 55px;
@@ -22,7 +22,7 @@
     padding-right: 0;
   }
   &__item--accent {
-    color: orange;
+    color: var(--orange-color);
   }
 }
 

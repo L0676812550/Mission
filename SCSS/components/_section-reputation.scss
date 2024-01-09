@@ -1,0 +1,24 @@
+.reputation {
+  @include flex-container (column, center, center, wrap);
+  flex-direction: column;
+  padding-bottom: 40px;
+
+  &__title{
+    display: block;
+  }
+
+  &__container {
+    @include flex-container (row, center, center, nowrap);
+  }
+  &__item {
+    @include flex-container (column, flex-start, flex-start, wrap);
+    border: 1.5px solid var(--grey-color);
+    width: 250px;
+    height: 175px;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  &__item-empty {
+    width: 50px; 
+  }
+}

@@ -368,7 +368,7 @@ template {
 .title__400-16-18 {
   font-weight: 400;
   font-size: 18px;
-  line-height: 18.77px;
+  line-height: 20px;
 }
 
 .title__400-18-21 {
@@ -423,7 +423,7 @@ template {
 .title__400-16-18 {
   font-weight: 400;
   font-size: 18px;
-  line-height: 18.77px;
+  line-height: 20px;
 }
 
 .title__400-18-21 {
@@ -461,6 +461,7 @@ template {
   --black-color: rgba(41, 46, 61, 1);
   --blue-color: rgba(41, 71, 169, 1);
   --grey-color: rgba(133, 142, 173, 1);
+  --darkgrey-color: rgba(61, 68, 92, 1);
   --orange-color: rgba(249, 153, 93, 1);
   --white-color: rgba(255, 255, 255, 1);
 }
@@ -487,6 +488,7 @@ template {
 }
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
@@ -494,6 +496,7 @@ template {
 }
 .header__left {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
@@ -505,10 +508,11 @@ template {
 
 .nav {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: nowrap;
-  color: black;
+  color: var(--black-color);
 }
 .nav__item {
   padding-right: 55px;
@@ -517,11 +521,12 @@ template {
   padding-right: 0;
 }
 .nav__item--accent {
-  color: orange;
+  color: var(--orange-color);
 }
 
 .hero {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-end;
   flex-wrap: nowrap;
@@ -536,6 +541,7 @@ template {
   flex: 30%;
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   flex-wrap: wrap;
@@ -563,8 +569,44 @@ template {
   flex-direction: column;
 }
 
+.reputation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.reputation__title {
+  display: block;
+}
+.reputation__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.reputation__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 1.5px solid var(--grey-color);
+  width: 250px;
+  height: 175px;
+  border-radius: 4px;
+  padding: 20px;
+}
+.reputation__item-empty {
+  width: 50px;
+}
+
 .button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -574,6 +616,7 @@ template {
 .button__back {
   background-color: var(--black-color);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
@@ -584,6 +627,7 @@ template {
 .button__next {
   background-color: var(--black-color);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
@@ -617,6 +661,26 @@ template {
 .hero {
   background-color: rgb(200, 233, 233);
   width: 100%;
+}
+
+.reputation__img {
+  background-image: url(/Images/Reputation.svg);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.color-dg {
+  color: var(--darkgrey-color);
+}
+
+.color-g {
+  color: var(--grey-color);
+}
+
+.color-o {
+  color: var(--orange-color);
 }
 
 .spacing__15-0 {
