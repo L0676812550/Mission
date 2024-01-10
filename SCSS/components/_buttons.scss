@@ -1,29 +1,49 @@
 .button {
+  display: inline-block;
+  padding: 15px;
+  margin: 25px 0;
+
+  &__nav {
   @include flex-container (row, center,center, wrap);
   width: 400px;
-}
+  }
 
-.button__back {
+  &__back {
   background-color: var(--black-color);
   @include flex-container (row, center,center, nowrap);
   width: calc(50% - 1px);
   padding: 5px 0;
-}
+  }
 
-.button__next {
+  &__next {
   background-color: var(--black-color);
   @include flex-container (row, center,center, nowrap);
   width: 50%;
   padding: 5px 0;
-}
+  }
 
-.button__link {
+  &__link {
   color: var(--white-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 21.11px;
   padding: 0 5px;
+  }
+
+  &__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.11px;
+  }
 }
+
+
+
+
+
+
+
+
 
 .gap {
   padding-right: 1px;

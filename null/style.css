@@ -524,6 +524,26 @@ template {
   color: var(--orange-color);
 }
 
+.about-us {
+  display: flex;
+}
+.about-us__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: 147px;
+  margin-left: 840px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+}
+.about-us__text {
+  padding: 25px;
+  width: 390px;
+}
+
 .hero {
   display: flex;
   flex-direction: row;
@@ -605,6 +625,11 @@ template {
 }
 
 .button {
+  display: inline-block;
+  padding: 15px;
+  margin: 25px 0;
+}
+.button__nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -612,7 +637,6 @@ template {
   flex-wrap: wrap;
   width: 400px;
 }
-
 .button__back {
   background-color: var(--black-color);
   display: flex;
@@ -623,7 +647,6 @@ template {
   width: calc(50% - 1px);
   padding: 5px 0;
 }
-
 .button__next {
   background-color: var(--black-color);
   display: flex;
@@ -634,13 +657,17 @@ template {
   width: 50%;
   padding: 5px 0;
 }
-
 .button__link {
   color: var(--white-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 21.11px;
   padding: 0 5px;
+}
+.button__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.11px;
 }
 
 .gap {
@@ -671,6 +698,17 @@ template {
   background-size: contain;
 }
 
+.about-us__img {
+  width: 60%;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0px 8px 8px -4px rgba(17, 24, 39, 0.04), 0px 20px 24px -4px rgba(17, 24, 39, 0.1);
+}
+
+.color-bl {
+  color: var(--blue-color);
+}
+
 .color-dg {
   color: var(--darkgrey-color);
 }
@@ -683,6 +721,19 @@ template {
   color: var(--orange-color);
 }
 
+.color-w {
+  color: var(--white-color);
+}
+
+.color-bg-w {
+  background-color: var(--white-color);
+}
+
 .spacing__15-0 {
   padding: 15px 0;
+}
+
+.about-us__img-spacing {
+  padding-top: 74px;
+  padding-left: 114px;
 }/*# sourceMappingURL=style.css.map */
