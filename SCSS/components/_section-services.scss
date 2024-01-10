@@ -1,0 +1,23 @@
+.services {
+  @include flex-container (column, center, center, wrap);
+  background-color: var(--lightgrey-color);
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  &__container {
+    @include flex-container (row, center, center, wrap);
+    width: 1000px;
+    // padding-left: 216px;  
+  }
+
+  &__item {
+     @include flex-container (column, center, center, wrap);
+    width: 271px;
+    height: 181px;
+    margin: 15px;
+  }
+
+  &__title {
+    padding: 20px;
+  }
+}

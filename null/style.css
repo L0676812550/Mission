@@ -461,6 +461,7 @@ template {
   --black-color: rgba(41, 46, 61, 1);
   --blue-color: rgba(41, 71, 169, 1);
   --grey-color: rgba(133, 142, 173, 1);
+  --lightgrey-color: rgba(246, 248, 247, 1);
   --darkgrey-color: rgba(61, 68, 92, 1);
   --orange-color: rgba(249, 153, 93, 1);
   --white-color: rgba(255, 255, 255, 1);
@@ -624,6 +625,38 @@ template {
   width: 50px;
 }
 
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--lightgrey-color);
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.services__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 271px;
+  height: 181px;
+  margin: 15px;
+}
+.services__title {
+  padding: 20px;
+}
+
 .button {
   display: inline-block;
   padding: 15px;
@@ -705,6 +738,11 @@ template {
   box-shadow: 0px 8px 8px -4px rgba(17, 24, 39, 0.04), 0px 20px 24px -4px rgba(17, 24, 39, 0.1);
 }
 
+.services__img {
+  border-bottom: 2px solid var(--grey-color);
+  padding: 15px;
+}
+
 .color-bl {
   color: var(--blue-color);
 }
@@ -723,6 +761,10 @@ template {
 
 .color-w {
   color: var(--white-color);
+}
+
+.color-bg-bl {
+  background-color: var(--blue-color);
 }
 
 .color-bg-w {
