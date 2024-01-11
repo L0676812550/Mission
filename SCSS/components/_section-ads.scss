@@ -1,0 +1,4 @@
+.ads {
+  @include flex-container(row, center, center, nowrap);
+  background-color: var(--darkgrey-color);
+} 

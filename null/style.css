@@ -545,6 +545,15 @@ template {
   width: 390px;
 }
 
+.ads {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: var(--darkgrey-color);
+}
+
 .hero {
   display: flex;
   flex-direction: row;
@@ -774,6 +783,10 @@ template {
 .services__img {
   border-bottom: 2px solid var(--grey-color);
   padding: 15px;
+}
+
+.ads {
+  background-image: url(/Images/Ads-bg.svg);
 }
 
 .color-bl {
