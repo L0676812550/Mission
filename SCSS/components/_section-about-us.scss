@@ -3,11 +3,10 @@
 
   &__container {
     @include flex-container (column, center, flex-start, wrap);
-    position: absolute;
-    // width: 488px;
-    // height: 523px;
+    position: relative;
     margin-top: 147px;
-    margin-left: 840px;
+    left: -100px;
+    top: -40px;
     border-radius: 2px;
     background-color: var(--blue-color);
   }

@@ -4,6 +4,7 @@
   &__left {
     flex: 60%;
     position: relative;
+    padding-bottom: 50px;
   }
 
   &__item {
@@ -15,29 +16,29 @@
     width: 180px;
   }
 
-  // &__item1 {
-  //   position: absolute;
-  //   padding-top: 122px;
-  //   padding-left: 512px;
-  // }
+  &__item1 {
+    position: relative;
+    left: 510px;
+    top: 15px;
+  }
 
-  // &__item2 {
-  //   position: absolute;
-  //   padding-top: 221px;
-  //   padding-left: 212px;
-  // }
+  &__item2 {
+    position: relative;
+    top: 165px;
+    left: 212px;
+  }
 
-  // &__item3 {
-  //   position: absolute;
-  //   padding-top: 364px;
-  //   padding-left: 458px;
-  // }
+  &__item3 {
+    position: relative; 
+    top: 213px;
+    left: -301px;
+  }
 
-  // &__item4 {
-  //   position: absolute;
-  //   padding-top: 469px;
-  //   padding-left: 261px;
-  // }
+  &__item4 {
+    position: relative;
+    top: -115px;
+    left: 245px;
+  }
 
   &__strip {
     border-left: 7px solid var(--orange-color);

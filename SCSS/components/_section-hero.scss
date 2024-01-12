@@ -7,7 +7,6 @@
   &__container {
   flex: 70%;
   padding-top: 70px;
-  padding-bottom: 70px;
   }
 
   &__block {
@@ -15,6 +14,7 @@
   position: relative;
   @include flex-container (row, flex-end,  flex-end, wrap);
   flex-direction: column;
+  top: -38px;
   }
 
   &__title {
