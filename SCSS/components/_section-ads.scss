@@ -1,4 +1,17 @@
 .ads {
-  @include flex-container(row, center, center, nowrap);
-  background-color: var(--darkgrey-color);
+  @include flex-container(row, space-evenly, center, nowrap);
+  padding: 75px 0;
+  width: 100%;
+  margin: auto;
+
+  &__consultation {
+    border: 2px solid var(--white-color);
+    border-radius: 2px;
+    padding: 10px;
+  }
 } 
+
+.phone-link {
+  text-decoration: underline;
+}
+
