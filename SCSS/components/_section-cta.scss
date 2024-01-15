@@ -1,0 +1,39 @@
+.cta {
+  background-color: var(--lightgrey-color);
+  @include flex-container (column, center, center, wrap);
+
+  &__container {
+    @include flex-container (column, center, center, wrap);
+    padding: 50px 0;
+    max-width: 540px;
+  }
+
+  &__form-container {
+    @include flex-container (row, space-between, center, wrap);
+  }
+
+  &__title {
+    text-align: start;
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+// .custom-input {
+//   position: relative;
+// }
+
+// .custom-input::before {
+//   content: Your "Name";
+// }
+
+// .custom-input span {
+//   color: var(--orange-color);
+// }
+
+// input {
+//   position: relative;
+//   z-index: 1;
+// }

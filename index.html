@@ -389,49 +389,63 @@
         <p class="title__h3">
           What can us do for you?
         </p>
-        <p class="title__400-20-23">
+        <p class="title__400-20-23 spacing__15-0 centered">
           We are ready to work on a project of any complexity, whether it&apos;s commercial or residential.
         </p>
         
         <div class="cta__form-container">
-          <div class="cta__form-item">
+          <div class="custom-input">
             <form action="/submit" method="post">
-              <label for="name"></label>
-              <input class="title__700-18-21" type="text" id="name" name="name" value="Your Name*" required>
+              <input class="form__style spacing__m-10" type="text" id="name" name="name" placeholder="Your Name*" required>
             </form>
           </div>
+<!-- 
+<div class="custom-input">
+  <input type="text" placeholder="Введіть [червоний текст] своє ім'я">
+</div>
 
-          <div class="cta__form-item">
-            <form action="/submit" method="post">
-              <label for="name"></label>
-              <input class="title__700-18-21" type="text" id="name" name="name" value="Email*" required>
-            </form>
-          </div>
 
-          <div class="cta__form-item">
-            <form action="/submit" method="post">
-              <label for="name"></label>
-              <input class="title__700-18-21" type="text" id="name" name="name" value="Reason for Contacting*" required>
-            </form>
-          </div>
+.custom-input {
+  position: relative;
+}
 
-          <div class="cta__form-item">
-            <form action="/submit" method="post">
-              <label for="name"></label>
-              <input class="title__700-18-21" type="text" id="name" name="name" value="Phone" required>
-            </form>
-          </div>
+.custom-input::before {
+  content: "Введіть ";
+}
+
+.custom-input span {
+  color: red;
+}
+
+input {
+  position: relative;
+  z-index: 1;
+} -->
+
+          <form action="/submit" method="post">
+            <input class="form__style spacing__m-10" type="text" id="name" name="name" placeholder="Email*" required>
+          </form>
+
+          <form action="/submit" method="post">
+            <input class="form__style spacing__m-10" type="text" id="name" name="name" placeholder="Reason for Contacting*" required>
+          </form>
+
+          <form action="/submit" method="post">
+            <input class="form__style spacing__m-10" type="text" id="name" name="name" placeholder="Phone" required>
+          </form>
         </div>
 
         <form class="cta__form-message">
           <form action="/submit" method="post">
-          <input class="title__700-18-21" type="text" id="name" name="name" placeholder="Message" required>
+          <input class="form__style-big" type="text" id="name" name="name" placeholder="Message" required>
         </form>
 
-        <p class="title__400-16-18"></p>
+        <p class="title__400-16-18 color-g cta__title">
+          * indicates a required field
+        </p>
 
-        <div class="button">
-          <span class="button__title">
+        <div class="button color-bg-bl">
+          <span class="button__title color-w">
             Submit
           </span>
         </div>
@@ -442,56 +456,57 @@
       <div class="bottom__left">
         <div class="bottom__container">
           <div class="bottom__container-item">
-            <p class="title__500-20-23">
+            <p class="title__500-20-23 color-bl spacing__10-0">
               Address:
             </p>
-            <p class="title__500-20-23">
+            <p class="title__500-20-23 color-bl spacing__10-0">
               Phone:
             </p>
-            <p class="title__500-20-23">
+            <p class="title__500-20-23 color-bl spacing__10-0">
               Email:
             </p>
           </div>
           <div class="bottom__container-item">
-            <p class="title__400-20-23">
+            <p class="title__400-20-23 color-dg spacing__10-0">
               6391 Elgin St. Celina, Delaware 10299
             </p>
-            <p class="title__400-20-23">
+            <p class="title__400-20-23 color-dg spacing__10-0">
               +84 1102 2703
             </p>
-            <p class="title__400-20-23">
+            <p class="title__400-20-23 color-dg spacing__10-0">
               hello@thebox.com
             </p>
           </div>
         </div>
-        <div class="bottom__logo">
-          <div class="logo"></div>
+
+        <div class="bottom__logo spacing__10-0">
+          <div class="logo logo__space"></div>
           <div class="logo__title"></div>
         </div>
       </div>
 
       <div class="bottom__right">
-        <p class="title__500-20-23">
+        <p class="title__500-20-23 color-bl">
           Newsletter:
         </p>
 
         <div class="bottom__subscribe">
           <form action="/submit" method="post">
-            <input type="email" id="email" name="email" placeholder="Your email here" required>
-          </form>
+            <input class="form__style spacing__mr-15" type="email" id="email" name="email" placeholder="Your email here" required>
+          </form>         
   
-          <div class="button">
-            <span class="button__title">
+          <div class="button spacing__10-0 color-bg-o">
+            <span class="button__title color-w">
               Subscribe
             </span>
           </div>
         </div>
 
-        <p class="title__500-20-23">
+        <p class="title__500-20-23 color-bl">
           Social:
         </p>
 
-        <div class="social-link">
+        <div class="bottom__social">
           <div class="social-link__fb"></div>
           <div class="social-link__in"></div>
           <div class="social-link__tw"></div>
@@ -503,7 +518,7 @@
   </main>
  
   <footer class="footer">
-    <p class="title__400-16-18">
+    <p class="title__400-16-18 color-w color-bg-bl spacing__15-112">
       TheBox Company © 2022. All Rights Reserved
     </p>
   </footer>

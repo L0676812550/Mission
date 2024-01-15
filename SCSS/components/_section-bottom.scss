@@ -1,0 +1,34 @@
+.bottom {
+  // background-color: #bcf9e5;
+  @include flex-container (row, center, center, wrap);
+  padding: 80px 112px;
+  
+  &__left {
+    flex: 1;
+  }
+
+  &__container {
+    @include flex-container (row, flex-start, flex-start, wrap);
+  }
+
+  &__container-item {
+    padding-right: 10px;
+  }
+
+  &__logo {
+    @include flex-container (row, flex-start, flex-end, nowrap);
+  }
+
+  &__right {
+    flex: 1;
+  }
+
+  &__subscribe {
+    @include flex-container (row, flex-start, center, nowrap);
+  }
+
+  &__social {
+    @include flex-container (row, flex-start, flex-end, nowrap);
+    padding-top: 15px;
+  }
+}

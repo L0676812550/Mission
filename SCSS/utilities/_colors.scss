@@ -15,6 +15,10 @@
   color: var(--darkgrey-color);
 }
 
+.color-lg {
+  color: var(--lightgrey-color);
+}
+
 .color-g {
   color: var(--grey-color)
 }
@@ -30,6 +34,10 @@
 // background-color
 .color-bg-bl {
   background-color: var(--blue-color);
+}
+
+.color-bg-o {
+  background-color: var(--orange-color);
 }
 
 .color-bg-w {

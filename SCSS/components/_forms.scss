@@ -1,0 +1,19 @@
+.form__style {
+    padding: 10px 85px 10px 10px;
+    border: 0.5px solid var(--grey-color);
+    color: var(--grey-color);
+
+    // &__style-big {
+    //   border: 0.5px solid var(--grey-color);
+    //   color: var(--grey-color);
+    // }
+  }
+
+  .form__style-big {
+    padding: 10px 236px 120px 10px;
+    border: 0.5px solid var(--grey-color);
+    color: var(--grey-color);
+    width: 100%;
+    margin-left: -123px;
+    margin-bottom: 10px;
+  }
