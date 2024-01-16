@@ -11,7 +11,7 @@
 </head>
 
 <!--! Маша:
-
+- Використання класів і ідентифікаторів. Можна просто класи завжди?
   -->
 
 <body class="body">
@@ -76,7 +76,7 @@
   
         <div class="button__nav">
           <div class="button__back">
-            <!-- <img class="arrow__reverse" src="./Images/arrow.svg"></img> -->
+            <img class="arrow__reverse" src="./Images/arrow.svg"></img>
             <a class="button__link">
               Back
             </a>
@@ -293,95 +293,95 @@
       </h3>
 
       <div class="projects__container">
+        <div class="projects__left">
 
-        <form class="projects__left">
-          <label>
-            <input type="checkbox" name="preference1" value="option1">
-            All
-          </label>
-          <label>
-            <input type="checkbox" name="preference1" value="option1">
-            Commercial
-          </label>
-          <label>
-            <input type="checkbox" name="preference1" value="option1">
-            Residential
-          </label>
-          <label>
-            <input type="checkbox" name="preference1" value="option1">
-            Other
-          </label>
-        </form>
+          <input type="radio" id="show-all" name="cardOption" class="hidden-radio">
+          <label for="show-all" class="radio-label">All</label>
+
+          <input type="radio" id="option1" name="cardOption" class="hidden-radio">
+          <label for="option1" class="radio-label">Commercial</label>
+
+          <input type="radio" id="option2" name="cardOption" class="hidden-radio">
+          <label for="option2" class="radio-label">Residential</label>
+
+          <input type="radio" id="option3" name="cardOption" class="hidden-radio">
+          <label for="option3" class="radio-label">Other</label>
+        </div>
 
         <div class="projects__right">
 
-          <div class="projects__card">
-            <div class="projects__img1"></div>
-            <div class="projects__info">
-              <p class="title__700-20-23">
-                Wildstone Infra Hotel
-              </p>
-              <p class="title__400-18-21">
-                2715 Ash Dr. San Jose, South Dakota
-              </p>
+          <div class="projects__container-cards">
+            <div class="projects__card projects__card1">
+              <div class="projects__img1"></div>
+              <div class="projects__info">
+                <p class="title__700-20-23 color-w spacing__10">
+                  Wildstone Infra Hotel
+                </p>
+                <p class="title__400-18-21 color-w spacing__10">
+                  2715 Ash Dr. San Jose, South Dakota
+                </p>
+              </div>
+            </div>
+  
+            <div class="projects__card projects__card2">
+              <div class="projects__img2"></div>
+              <div class="projects__info">
+                <p class="title__700-20-23 color-w spacing__10">
+                  Wish Stone Building
+                </p>
+                <p class="title__400-18-21 color-w spacing__10">
+                  2972 Westheimer Rd. Santa Ana, Illinois 
+                </p>
+              </div>
+            </div>
+  
+            <div class="projects__card projects__card3">
+              <div class="projects__img3"></div>
+              <div class="projects__info">
+                <p class="title__700-20-23 color-w spacing__10">
+                  Mr. Parkinston&apos;s House
+                </p>
+                <p class="title__400-18-21 color-w spacing__10">
+                  3517 W. Gray St. Utica, Pennsylvania
+                </p>
+              </div>
+            </div>
+  
+            <div class="projects__card projects__card4">
+              <div class="projects__img4"></div>
+              <div class="projects__info">
+                <p class="title__700-20-23 color-w spacing__10">
+                  Oregano Height
+                </p>
+                <p class="title__400-18-21 color-w spacing__10">
+                  2464 Royal Ln. Mesa, New Jersey 
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="projects__card">
-            <div class="projects__img2"></div>
-            <div class="projects__info">
-              <p class="title__700-20-23">
-                Wish Stone Building
-              </p>
-              <p class="title__400-18-21">
-                2972 Westheimer Rd. Santa Ana, Illinois 
-              </p>
-            </div>
-          </div>
-
-          <div class="projects__card">
-            <div class="projects__img3"></div>
-            <div class="projects__info">
-              <p class="title__700-20-23">
-                Mr. Parkinston&apos;s House
-              </p>
-              <p class="title__400-18-21">
-                3517 W. Gray St. Utica, Pennsylvania
-              </p>
-            </div>
-          </div>
-
-          <div class="projects__card">
-            <div class="projects__img4"></div>
-            <div class="projects__info">
-              <p class="title__700-20-23">
-                Oregano Height
-              </p>
-              <p class="title__400-18-21">
-                2464 Royal Ln. Mesa, New Jersey 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="projects__nav">
-        <div class="projects__nav-container">
-          <div class="button__back">
+          <div class="projects__nav">
+            <div class="button__back">
               <img class="arrow__reverse" src="./Images/arrow.svg"></img>
-              <a class="link">
+              <a class="button__link">
                 Back
               </a>
             </div>
-            <div class="projects__nav-page-control"></div>
+            <div class="projects__nav-page-control">
+              <span class="projects__dot projects__dot-active"></span>
+              <span class="projects__dot"></span>
+              <span class="projects__dot"></span>
+            </div>
             <div class="button__next">
               <img class="arrow" src="./Images/arrow_2.svg"></img>
-              <a class="link">
+              <a class="button__link">
                 Next
               </a>
             </div>
+          </div>
         </div>
       </div>
+
     </section>
 
     <section class="cta">

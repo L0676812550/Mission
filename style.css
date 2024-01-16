@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .body {
   font-family: "WorkSans", sans-serif;
   padding: 0;
@@ -690,6 +691,132 @@ template {
   flex-direction: column;
 }
 
+.projects {
+  padding: 60px 112px;
+}
+.projects__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+.projects__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex: 30%;
+}
+.projects__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 70%;
+}
+.projects__container-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.projects__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: var(--blue-color);
+  width: 100%;
+}
+.projects__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 10px 25px;
+}
+.projects__nav-page-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex: 30%;
+}
+.projects__dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: var(--lightgrey-color);
+  border-radius: 50%;
+  display: inline-block;
+}
+.projects__dot-active {
+  background-color: var(--blue-color);
+}
+
+.hidden-radio {
+  display: none;
+}
+
+.radio-label {
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px;
+  color: var(--grey-color);
+  position: relative;
+}
+
+/* Додавання вертикальних полосок перед варіантами та зміна кольору при активності */
+.radio-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px; /* Регулювання відступу для полосок */
+  width: 3px;
+  height: 10px;
+  background-color: var(--grey-color);
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+/* Стилізація для відображення активної вертикальної полоски та зміна її кольору при активності */
+.hidden-radio:checked + .radio-label::before {
+  background-color: var(--blue-color);
+}
+
+/* Стилізація для відображення вмісту обраної радіокнопки */
+#option1:checked ~ .projects__container-cards .projects__card1,
+#option2:checked ~ .projects__container-cards .projects__card2,
+#option3:checked ~ .projects__container-cards .projects__card3,
+#show-all:checked ~ .projects__container-cards .projects__card {
+  display: flex;
+}
+
+/* Стилізація для відображення активної радіокнопки та вертикальної полоски */
+#option1:checked + .radio-label::before,
+#option2:checked + .radio-label::before,
+#option3:checked + .radio-label::before,
+#show-all:checked + .radio-label::before {
+  background-color: var(--blue-color);
+  height: 100%; /* Змінити висоту полоски на 100% */
+}
+
 .reputation {
   display: flex;
   flex-direction: column;
@@ -936,6 +1063,38 @@ template {
   background-repeat: no-repeat;
 }
 
+.projects__img1 {
+  background-image: url(./Images/Projects-1.svg);
+  width: 384px;
+  height: 247px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.projects__img2 {
+  background-image: url(./Images/Projects-2.svg);
+  width: 384px;
+  height: 247px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.projects__img3 {
+  background-image: url(./Images/Projects-3.svg);
+  width: 384px;
+  height: 247px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.projects__img4 {
+  background-image: url(./Images/Projects-4.svg);
+  width: 384px;
+  height: 247px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .social-link__fb {
   background-image: url(./Images/Social-fb.svg);
   width: 40px;
@@ -1008,6 +1167,10 @@ template {
 
 .spacing__10-0 {
   padding: 10px 0;
+}
+
+.spacing__10 {
+  padding: 10px;
 }
 
 .spacing__65 {

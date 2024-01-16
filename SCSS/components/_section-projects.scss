@@ -1,0 +1,113 @@
+.projects {
+  padding: 60px 112px;
+
+  &__container {
+    @include flex-container (row, space-between, start, nowrap);
+  }
+
+  &__left {
+    @include flex-container (column, flex-start, flex-start, wrap);
+    flex: 30%;
+  }
+
+  &__right {
+    @include flex-container (row, center, center, wrap);
+    flex: 70%;
+  }
+
+  &__container-cards {
+    @include flex-container (row, center, center, wrap);
+  }
+
+  &__card {
+    @include flex-container (column, center, center, wrap);
+    padding: 10px;
+  }
+
+  &__info {
+    @include flex-container (column, center, flex-start, wrap);
+    background-color: var(--blue-color);
+    width: 100%;
+  }
+
+  &__nav {
+    @include flex-container (row, space-between, center, nowrap);
+    width: 100%;
+    padding: 10px 25px;
+  }
+
+  &__nav-page-control {
+    @include flex-container (row, center, center, nowrap);
+    flex: 30%;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: var(--lightgrey-color);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &__dot-active {
+    background-color: var(--blue-color);
+  }
+}
+
+// .projects__container-cards {
+//   display: none;
+//   padding: 20px;
+//   border: 1px solid #ccc;
+// }
+
+.hidden-radio {
+  display: none;
+}
+
+.radio-label {
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px;
+  color: var(--grey-color);
+  position: relative; 
+}
+
+/* Додавання вертикальних полосок перед варіантами та зміна кольору при активності */
+.radio-label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20px; /* Регулювання відступу для полосок */
+  width: 3px;
+  height: 10px;
+  background-color: var(--grey-color);
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+/* Стилізація для відображення активної вертикальної полоски та зміна її кольору при активності */
+.hidden-radio:checked + .radio-label::before {
+  background-color: var(--blue-color);
+}
+
+// .projects__container-cards .projects__card {
+//   display: none;
+// }
+
+/* Стилізація для відображення вмісту обраної радіокнопки */
+#option1:checked ~ .projects__container-cards .projects__card1,
+#option2:checked ~ .projects__container-cards .projects__card2,
+#option3:checked ~ .projects__container-cards .projects__card3,
+#show-all:checked ~ .projects__container-cards .projects__card {
+  display: flex;
+}
+
+/* Стилізація для відображення активної радіокнопки та вертикальної полоски */
+#option1:checked + .radio-label::before,
+#option2:checked + .radio-label::before,
+#option3:checked + .radio-label::before,
+#show-all:checked + .radio-label::before {
+  background-color: var(--blue-color);
+  height: 100%; /* Змінити висоту полоски на 100% */
+}
