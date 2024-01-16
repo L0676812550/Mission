@@ -11,7 +11,7 @@
   &__back {
   background-color: var(--black-color);
   @include flex-container (row, center,center, nowrap);
-  width: calc(50% - 1px);
+  width: calc(50% - 5px);
   padding: 5px 0;
   }
 
@@ -39,6 +39,6 @@
 }
 
 .gap {
-  padding-right: 1px;
+  padding-right: 5px;
   background-color: var(--white-color);
 }

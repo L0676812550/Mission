@@ -957,7 +957,7 @@ template {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: calc(50% - 1px);
+  width: calc(50% - 5px);
   padding: 5px 0;
 }
 .button__next {
@@ -985,7 +985,7 @@ template {
 }
 
 .gap {
-  padding-right: 1px;
+  padding-right: 5px;
   background-color: var(--white-color);
 }
 

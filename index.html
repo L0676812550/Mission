@@ -30,22 +30,22 @@
           </a>
         </li>
         <li class="nav__item">
-          <a class="link" href="#">
+          <a class="link" href="#about-us">
             About Us
           </a>
         </li>
         <li class="nav__item">
-          <a class="link" href="#">
+          <a class="link" href="#projects">
             Projects
           </a>
         </li>
         <li class="nav__item">
-          <a class="link" href="#">
+          <a class="link" href="#services">
             Services
           </a>
         </li>
         <li class="nav__item">
-          <a class="link color-o" href="#">
+          <a class="link color-o" href="#contact-us">
             Contact Us
           </a>
         </li>
@@ -75,15 +75,15 @@
         </div>
   
         <div class="button__nav">
-          <div class="button__back">
+          <div class="button__back" tabindex="0" role="button">
             <img class="arrow__reverse" src="./Images/arrow.svg"></img>
-            <a class="button__link">
+            <a class="button__link" href="#">
               Back
             </a>
           </div>
           <div class="gap"></div>
-          <div class="button__next">
-            <a class="button__link">
+          <div class="button__next" tabindex="0" role="button">
+            <a class="button__link" href="#">
               Next
             </a>
             <img class="arrow" src="./Images/arrow_2.svg"></img>
@@ -143,7 +143,7 @@
     </section>
     
     <section class="about-us">
-      <img class="about-us__img" 
+      <img class="about-us__img"  id="about-us"
         src="./Images/About-us_photo.svg">
       </img> 
       <div class="about-us__container">
@@ -157,17 +157,17 @@
           <p class="title__400-20-23 color-w spacing__15-0">
             We&apos;ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.
           </p>
-          <div class="button color-bg-w">
-            <span class="button__title color-bl">
+          <div class="button color-bg-w" tabindex="0" role="button">
+            <a class="button__title color-bl" href="#">
               More on Our History
-            </span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="services">
-      <h3 class="title__h3">
+      <h3 class="title__h3" id="services">
         Services
       </h3>
 
@@ -260,10 +260,10 @@
         <p class="title__400-20-23 color-dg">
           Our company has been the leading provided construction services to clients throughout the USA since 1988.
         </p>
-        <div class="button color-bg-bl">
-          <span class="button__title color-w">
+        <div class="button color-bg-bl" tabindex="0" role="button">
+          <a class="button__title color-w" href="#">
             Contact Us
-          </span>
+          </a>
         </div>
       </div>
     </section>
@@ -288,7 +288,7 @@
     </section>
 
     <section class="projects">
-      <h3 class="title__h3">
+      <h3 class="title__h3" id="projects">
         Projects
       </h3>
 
@@ -361,9 +361,9 @@
           </div>
 
           <div class="projects__nav">
-            <div class="button__back">
+            <div class="button__back" tabindex="0" role="button">
               <img class="arrow__reverse" src="./Images/arrow.svg"></img>
-              <a class="button__link">
+              <a class="button__link" href="#">
                 Back
               </a>
             </div>
@@ -372,9 +372,9 @@
               <span class="projects__dot"></span>
               <span class="projects__dot"></span>
             </div>
-            <div class="button__next">
+            <div class="button__next" tabindex="0" role="button">
               <img class="arrow" src="./Images/arrow_2.svg"></img>
-              <a class="button__link">
+              <a class="button__link" href="#">
                 Next
               </a>
             </div>
@@ -444,10 +444,10 @@ input {
           * indicates a required field
         </p>
 
-        <div class="button color-bg-bl">
-          <span class="button__title color-w">
+        <div class="button color-bg-bl" tabindex="0" role="button">
+          <a class="button__title color-w" href="#">
             Submit
-          </span>
+          </a>
         </div>
       </div>
     </section>
@@ -495,10 +495,10 @@ input {
             <input class="form__style spacing__mr-15" type="email" id="email" name="email" placeholder="Your email here" required>
           </form>         
   
-          <div class="button spacing__10-0 color-bg-o">
-            <span class="button__title color-w">
+          <div class="button spacing__10-0 color-bg-o" tabindex="0" role="button">
+            <a class="button__title color-w" href="#">
               Subscribe
-            </span>
+            </a>
           </div>
         </div>
 
@@ -518,7 +518,7 @@ input {
   </main>
  
   <footer class="footer">
-    <p class="title__400-16-18 color-w color-bg-bl spacing__15-112">
+    <p class="title__400-16-18 color-w color-bg-bl spacing__15-112" id="contact-us">
       TheBox Company © 2022. All Rights Reserved
     </p>
   </footer>
