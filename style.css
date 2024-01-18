@@ -722,7 +722,26 @@ template {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.projects__slider {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+.projects__slider1, .projects__slider2, .projects__slider3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  transition: transform 0.5s ease-in-out;
 }
 .projects__card {
   display: flex;
@@ -731,6 +750,8 @@ template {
   align-items: center;
   flex-wrap: wrap;
   padding: 10px;
+  max-width: 100%;
+  scroll-snap-align: start;
 }
 .projects__info {
   display: flex;
