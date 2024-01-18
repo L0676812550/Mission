@@ -707,26 +707,27 @@ template {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  flex: 30%;
+  width: 30%;
 }
 .projects__right {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex: 70%;
+  overflow: hidden;
+  width: 70%;
 }
 .projects__container-cards {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: normal;
+  align-items: normal;
   flex-wrap: nowrap;
   overflow: hidden;
   width: 100%;
+  height: 703px;
   position: relative;
-  margin: 0 auto;
 }
 .projects__slider {
   display: flex;
@@ -740,7 +741,7 @@ template {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   transition: transform 0.5s ease-in-out;
 }
 .projects__card {
@@ -1049,7 +1050,6 @@ template {
 }
 
 .reputation__img {
-  background-image: url(/Images/Reputation.svg);
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;

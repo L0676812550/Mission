@@ -7,20 +7,22 @@
 
   &__left {
     @include flex-container (column, flex-start, flex-start, wrap);
-    flex: 30%;
+    width: 30%;
   }
 
   &__right {
-    @include flex-container (row, center, center, wrap);
-    flex: 70%;
+    @include flex-container (column, center, center, wrap);
+    overflow: hidden;
+    width: 70%;
   }
 
   &__container-cards {
-    @include flex-container (row, center, center, nowrap);
+    @include flex-container (row, normal, normal, nowrap);
     overflow:hidden;
     width: 100%;
+    height: 703px;
     position: relative;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 
   &__slider {
@@ -34,7 +36,7 @@
   &__slider1, 
   &__slider2, 
   &__slider3 {
-  @include flex-container (row, center, center, wrap);
+  @include flex-container (row, center, center, nowrap);
   transition: transform 0.5s ease-in-out;
   }
 
